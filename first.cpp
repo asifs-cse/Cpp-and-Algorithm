@@ -3,6 +3,6 @@ using namespace std;
 #include<conio.h>
 
 int main(){
-    cout<<"Hello world dfgdsdfsdffg";
+    cout<<"Hello world";
     return 0;
 }
