@@ -9,6 +9,11 @@ int main(){
         {
             continue;  
         }
+        
+        if (i==50)
+        {
+            break;
+        }
         cout<<i<<endl;
         
     }
