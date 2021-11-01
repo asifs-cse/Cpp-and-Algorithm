@@ -2,6 +2,7 @@ using namespace std;
 #include<iostream>
 #include<conio.h>
 int main(){
+    cout<<"Enter Start and end number: ";
     int s,e;
     cin>>s>>e;
     for (int num= s; num <= e; num++)
