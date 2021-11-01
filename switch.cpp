@@ -11,9 +11,10 @@ int main(){
     case 'a':
         cout<<"enter a";
         break;
-        case 'b':
+    case 'b':
         cout<<"enter b";
-    
+    case 'c':
+        cout<<"enter c";
     default:
         break;
     }
