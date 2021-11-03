@@ -4,6 +4,16 @@ using namespace std;
 
 int main(){
 
-    cout<<"working";
+    int a,b,c,d;
+    a=10;
+    b=10;
+    c=a++;
+    d=++b;
+
+    cout<<a<<endl;
+    cout<<b<<endl;
+    cout<<c<<endl;
+    cout<<d<<endl;
+
     return 0;
 }
