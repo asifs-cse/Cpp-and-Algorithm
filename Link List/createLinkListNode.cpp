@@ -16,7 +16,5 @@ int main(){
     head->link= (struct Node*) malloc(sizeof(struct Node));
     head->link->data =10;
     head->link->link=NULL;
-    cout<<head->data<<endl;
-    cout<<head->link->data;
     return 0;
 }
