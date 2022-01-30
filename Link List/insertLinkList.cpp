@@ -35,11 +35,16 @@ void print(){
 
 int main(){
     head =NULL;
-    insert(10);
-    insert(15);
-    insert(15);
-    insert(15);
-    insert(15);
+    int n;
+    cout<<"Inpur node size: ";
+    cin>>n;
+
+    for (int i = 0; i < n; i++)
+    {
+        int n;
+        cin>>n;
+        insert(n);
+    }
     print();
     return 0;
 }
