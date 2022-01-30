@@ -14,6 +14,13 @@ void insert(int val){
     if (head==NULL)
     {
         head = temp;
+    }else{
+        struct Node* t=head;
+        while (t->link!=NULL)
+        {
+            t=t->link;
+        }
+        t->link = temp;
     }
 }
 
@@ -29,6 +36,9 @@ void print(){
 int main(){
     head =NULL;
     insert(10);
+    insert(15);
+    insert(15);
+    insert(15);
     insert(15);
     print();
     return 0;
