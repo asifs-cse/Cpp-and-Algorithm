@@ -1,29 +1,35 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class rectangle{
-    int height, width;
-    public:
-        void set(int h, int w){height =h; width =w;}
-        int area(){return height*width;}
-        friend class cost;
+class Box {
+   double width;
+   
+   public:
+      friend void printWidth( Box box );
+      void setWidth( double wid );
 };
 
-class cost{
-    int costRate;
-    public:
-    void setValue(int a){costRate = a;}
-    int totalCost(rectangle r){
-        return costRate*r.height*r.width;
-    }
-};
-int main(){
-    rectangle r1;
-    cost c1;
-    r1.set(10,20);
-    c1.setValue(100);
-    cout<<"Area: "<<r1.area()<<endl;
-    cout<<"Cost: "<<c1.totalCost(r1)<<endl;
+// Member function definition
+void Box::setWidth( double wid ) {
+   width = wid;
+}
 
-    return 0;
+// Note: printWidth() is not a member function of any class.
+void printWidth( Box box ) {
+   /* Because printWidth() is a friend of Box, it can
+   directly access any member of this class */
+   cout << "Width of box : " << box.width <<endl;
+}
+ 
+// Main function for the program
+int main() {
+   Box box;
+ 
+   // set box width without member function
+   box.setWidth(10.0);
+   
+   // Use friend function to print the wdith.
+   printWidth( box );
+ 
+   return 0;
 }
