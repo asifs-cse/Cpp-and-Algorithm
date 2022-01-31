@@ -6,6 +6,7 @@ class rectangle{
     public:
         void set(int h, int w){height =h; width =w;}
         int area(){return height*width;}
+        friend class cost;
 };
 
 class cost{
@@ -13,7 +14,7 @@ class cost{
     public:
     void setValue(int a){costRate = a;}
     int totalCost(rectangle r){
-        return costRate*r.area();
+        return costRate*r.height*r.width;
     }
 };
 int main(){
