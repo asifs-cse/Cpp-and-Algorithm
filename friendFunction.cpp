@@ -4,10 +4,9 @@ using namespace std;
 class Distance{
     private:
         int meter;
-
         friend int addFive(Distance);
     public:
-        Distance():meter(0){}
+        Distance():meter(5){}
 };
 
 //friend function defination
