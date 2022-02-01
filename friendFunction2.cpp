@@ -20,16 +20,13 @@ void printWidth( Box box ) {
    directly access any member of this class */
    cout << "Width of box : " << box.width <<endl;
 }
- 
 // Main function for the program
 int main() {
    Box box;
- 
    // set box width without member function
    box.setWidth(10.0);
    
    // Use friend function to print the wdith.
    printWidth( box );
- 
    return 0;
 }
